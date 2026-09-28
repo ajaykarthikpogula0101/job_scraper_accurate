@@ -1,0 +1,18 @@
+requests>=2.31
+beautifulsoup4>=4.12
+openpyxl>=3.1
+pandas>=2.0
+langdetect>=1.0.9
+python-dotenv>=1.0
+playwright>=1.45
+# Optional, but recommended: lets netcache.py fall back to public resolvers
+# (1.1.1.1 / 8.8.8.8 / 9.9.9.9) when the system resolver keeps failing.
+dnspython>=2.4
+# Optional: adds a Google fallback to the websearch.py engine chain.
+googlesearch-python>=1.2
+# Optional: accurate public-suffix handling (vortice.inf.br, escola.g12.br).
+# A static table covers the common cases without it.
+tldextract>=5.1
+
+# Stealth browser used by browser_fetch.py for JavaScript-only career pages. After install run: python -m camoufox fetch
+camoufox[geoip]>=0.4
